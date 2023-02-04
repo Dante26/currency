@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+          <i class="bi bi-currency-exchange" id="bIcon"></i>
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarId"
+            class="navbar-toggler"
+            aria-controls="navbarId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarId">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"> Tools </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"> Resources </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5 mb-5">
+      <h1 class="text-center">Currency Converter</h1>
+      <h5 class="text-center">Check live foreign currency exchange rates</h5>
+
+      <div class="card rounded my-3 shadow-lg">
+        <div class="text-center">
+          <div class="my-3">
+            <p>Select the base currency and the target currency and we'll show you the conversion rate!</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <label for="base-currency" id="label1"><b>Base currency:</b></label>
+              <select class="form-select" aria-label="Default select example" id="base-currency">
+                <option value="USD">United States Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">British Pound</option>
+                <option value="CZK">Czech Koruna</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="SEK">Swedish Krona</option>
+                <option value="PLN">Polish Złoty</option>
+                <option value="JPY">Japanese Yen</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label for="target-currency" id="label2"><b>Target currency:</b></label>
+              <select class="form-select" aria-label="Default select example" id="target-currency">
+                <option value="USD">United States Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">British Pound</option>
+                <option value="CZK">Czech Koruna</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="SEK">Swedish Krona</option>
+                <option value="PLN">Polish Złoty</option>
+                <option value="JPY">Japanese Yen</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12">
+              <input type="number" name="amount" id="amountId">
+            </div>
+          </div>
+        </div>
+        <div class="card-body mb-5">
+          <div class="row spanSize">
+            <div class="col-4 text-center">
+              <span id="selected-number">1</span>
+            </div>
+            <div class="col-4 text-center">
+              <span>=</span>
+            </div>
+            <div class="col-4 text-center">
+              <span id="conversion-result">1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="container myFooter">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">About</a>
+          </li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2023 Jakub, Inc</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
